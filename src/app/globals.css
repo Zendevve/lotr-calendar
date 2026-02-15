@@ -1,26 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Shire Color Palette */
+  --shire-green: #4a7c59;
+  --shire-brown: #8b6f47;
+  --shire-gold: #d4a843;
+  --shire-cream: #f5f0e1;
+  --shire-parchment: #ede3cc;
+  --shire-ink: #2c1810;
+  --shire-red: #a0522d;
+  --shire-dark-green: #3d6349;
+  --shire-light-gold: #e8c766;
+  
+  /* Semantic colors */
+  --background: var(--shire-cream);
+  --foreground: var(--shire-ink);
+  --card: var(--shire-parchment);
+  --card-foreground: var(--shire-ink);
+  --primary: var(--shire-green);
+  --primary-foreground: var(--shire-cream);
+  --secondary: var(--shire-brown);
+  --secondary-foreground: var(--shire-cream);
+  --accent: var(--shire-gold);
+  --accent-foreground: var(--shire-ink);
+  --border: var(--shire-brown);
+  --muted: #d4c9b0;
+  --muted-foreground: #5c4a3d;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  
+  /* Shire-specific colors */
+  --color-shire-green: var(--shire-green);
+  --color-shire-brown: var(--shire-brown);
+  --color-shire-gold: var(--shire-gold);
+  --color-shire-cream: var(--shire-cream);
+  --color-shire-parchment: var(--shire-parchment);
+  --color-shire-ink: var(--shire-ink);
+  --color-shire-red: var(--shire-red);
+  --color-shire-dark-green: var(--shire-dark-green);
+  --color-shire-light-gold: var(--shire-light-gold);
+  
+  /* Fonts */
+  --font-heading: 'Cinzel', serif;
+  --font-body: 'Crimson Text', serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
+/* Parchment background utility */
+.bg-parchment {
+  background-color: var(--shire-parchment);
+  background-image: 
+    linear-gradient(90deg, rgba(139, 111, 71, 0.03) 1px, transparent 1px),
+    linear-gradient(rgba(139, 111, 71, 0.03) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Decorative borders */
+.border-shire {
+  border-color: var(--shire-brown);
+}
+
+/* Selection color */
+::selection {
+  background: var(--shire-gold);
+  color: var(--shire-ink);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--shire-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--shire-brown);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--shire-green);
 }

@@ -1,0 +1,5 @@
+1:"$Sreact.fragment"
+2:I[97367,["/_next/static/chunks/2f236954d6a65e12.js"],"OutletBoundary"]
+3:"$Sreact.suspense"
+0:{"buildId":"aHs3iysR8Im-8H2D073_E","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen bg-parchment flex items-center justify-center","children":["$","main",null,{"className":"text-center p-8","children":[["$","h1",null,{"className":"text-4xl md:text-6xl text-shire-ink mb-4","children":"Shire Calendar"}],["$","p",null,{"className":"text-xl text-shire-brown mb-8","children":"Coming Soon"}],["$","div",null,{"className":"w-24 h-1 bg-shire-gold mx-auto rounded-full"}],["$","p",null,{"className":"mt-8 text-shire-ink/70 max-w-md mx-auto","children":"A beautiful calendar for Hobbits. Convert dates, explore the Shire reckoning, and find your Shire birthday."}]]}]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"loading":null,"isPartial":false}
+4:null
