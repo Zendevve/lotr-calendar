@@ -1,4 +1,5 @@
 import { TodayHero } from '@/components/today-hero/TodayHero';
+import { YearCalendar } from '@/components/calendar/YearCalendar';
 
 export default function Home() {
   return (
@@ -31,20 +32,20 @@ export default function Home() {
         <TodayHero />
       </div>
 
-      {/* Calendar Section (Coming Soon) */}
+      {/* Calendar Section */}
       <section id="calendar" className="py-16 px-4 border-t border-shire-brown/20">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-heading text-3xl text-shire-ink mb-4">
-            Full Year Calendar
-          </h2>
-          <p className="text-shire-brown mb-8">
-            Browse the complete Shire calendar year
-          </p>
-          <div className="inline-block px-6 py-3 bg-shire-green/10 rounded-lg border border-shire-green/30">
-            <p className="text-shire-green font-heading">
-              Coming Soon
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="font-heading text-3xl sm:text-4xl text-shire-ink mb-4">
+              Full Year Calendar
+            </h2>
+            <p className="text-shire-brown max-w-2xl mx-auto">
+              Browse the complete Shire calendar. Each month has 30 days, starting on Sterday. 
+              Note the special days between months and the Shire-reform that keeps weekdays consistent year to year.
             </p>
           </div>
+          
+          <YearCalendar />
         </div>
       </section>
 
@@ -55,7 +56,7 @@ export default function Home() {
             Date Converter
           </h2>
           <p className="text-shire-brown mb-8">
-            Find your Shire birthday or convert any date
+            Find your Shire birthday or convert any date between Gregorian and Shire reckoning
           </p>
           <div className="inline-block px-6 py-3 bg-shire-gold/10 rounded-lg border border-shire-gold/30">
             <p className="text-shire-brown font-heading">
@@ -72,7 +73,7 @@ export default function Home() {
             About the Shire Calendar
           </h2>
           <p className="text-shire-brown mb-8">
-            Learn how Hobbits reckon time
+            Learn how Hobbits reckon time, the Shire-reform, and the history of the calendar
           </p>
           <div className="inline-block px-6 py-3 bg-shire-brown/10 rounded-lg border border-shire-brown/30">
             <p className="text-shire-brown font-heading">
