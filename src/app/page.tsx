@@ -1,5 +1,6 @@
 import { TodayHero } from '@/components/today-hero/TodayHero';
 import { YearCalendar } from '@/components/calendar/YearCalendar';
+import { DateConverter } from '@/components/converter/DateConverter';
 
 export default function Home() {
   return (
@@ -49,20 +50,19 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Converter Section (Coming Soon) */}
+      {/* Converter Section */}
       <section id="convert" className="py-16 px-4 border-t border-shire-brown/20 bg-shire-parchment/50">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-heading text-3xl text-shire-ink mb-4">
-            Date Converter
-          </h2>
-          <p className="text-shire-brown mb-8">
-            Find your Shire birthday or convert any date between Gregorian and Shire reckoning
-          </p>
-          <div className="inline-block px-6 py-3 bg-shire-gold/10 rounded-lg border border-shire-gold/30">
-            <p className="text-shire-brown font-heading">
-              Coming Soon
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="font-heading text-3xl sm:text-4xl text-shire-ink mb-4">
+              Date Converter
+            </h2>
+            <p className="text-shire-brown max-w-2xl mx-auto">
+              Find your Shire birthday or convert any date between Gregorian and Shire reckoning
             </p>
           </div>
+          
+          <DateConverter />
         </div>
       </section>
 
