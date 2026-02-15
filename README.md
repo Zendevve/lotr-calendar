@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Shire Calendar
 
-## Getting Started
+A beautiful web app for exploring the Shire Calendar from J.R.R. Tolkien's *The Lord of the Rings*. See today's date as a Hobbit would, browse the full calendar, and convert dates between Gregorian and Shire reckoning.
 
-First, run the development server:
+## Features
+
+✨ **Today in the Shire** — See the current date converted to Shire Reckoning with weekday, month, and year
+
+📅 **Full Year Calendar** — Browse all 12 months plus special days (Yuledays, Lithedays, Overlithe)
+
+🔄 **Date Converter** — Find your Shire birthday or convert any date between Gregorian and Shire reckoning
+
+🎨 **Beautiful Design** — Warm, earthy Shire aesthetic with parchment textures and custom typography
+
+🌍 **Responsive** — Works beautifully on mobile, tablet, and desktop
+
+## The Shire Calendar
+
+Based on **Appendix D** of *The Lord of the Rings*:
+
+- **12 months** of 30 days each
+- **Special days** outside the months: 2 Yule, 1 Lithe, Mid-year's Day, 2 Lithe, 1 Yule
+- **Overlithe** — An extra day in leap years
+- **Shire-reform** — Weekdays never shift; Mid-year's Day and Overlithe have no weekday
+- **7 weekdays**: Sterday, Sunday, Monday, Trewsday, Hevensday, Mersday, Highday
+
+## Tech Stack
+
+- **Framework**: Next.js 14 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Testing**: Vitest
+- **Deployment**: Vercel
+
+## Development
 
 ```bash
+# Clone the repository
+git clone https://github.com/Zendevve/lotr-calendar.git
+cd shire-calendar
+
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Run tests
+npm test
+
+# Build for production
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Date Conversion
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The Shire year starts on **December 21** (2 Yule) and ends on **December 20** (1 Yule). The Shire year number equals the Gregorian year in which Mid-year's Day falls.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Example Conversions
 
-## Learn More
+| Gregorian | Shire |
+|-----------|-------|
+| December 21 | 2 Yule |
+| December 22 | Afteryule 1 |
+| June 20 (non-leap) | Mid-year's Day |
+| June 20 (leap) | Overlithe |
+| December 20 | 1 Yule |
 
-To learn more about Next.js, take a look at the following resources:
+## Attribution
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Based on *The Lord of the Rings* by J.R.R. Tolkien, specifically **Appendix D: Calendars**.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This is a fan-made project for educational and entertainment purposes. All rights to Middle-earth and The Lord of the Rings belong to the Tolkien Estate and respective rights holders.
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+MIT License — Feel free to use and modify!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+*"If more of us valued food and cheer and song above hoarded gold, it would be a merrier world."* — Thorin Oakenshield
